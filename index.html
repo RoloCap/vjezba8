@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <title>Interakcijski elementi – CSS</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #ff9100;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            margin: 15px 0;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #c55b04;
+            transform: scale(1.1);
+        }
+
+        .btn:active {
+            transform: scale(0.95);
+        }
+
+        input {
+            padding: 10px;
+            width: 200px;
+            border: 2px solid #ccc;
+            border-radius: 6px;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #e08c1f;
+            box-shadow: 0 0 10px rgba(156, 95, 2, 0.5);
+        }
+
+        .card {
+            width: 200px;
+            height: 120px;
+            background-color: #eee;
+            margin: 20px auto 0;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.4s ease;
+        }
+
+        .card:hover {
+            transform: rotate(5deg) translateY(-10px);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>CSS Interakcija</h1>
+
+        <a href="#" class="btn">Hover / Active gumb</a>
+
+        <br><br>
+
+        <input type="text" placeholder="Klikni za focus">
+
+        <div class="card">
+            Hover kartica
+        </div>
+    </div>
+
+</body>
+</html>
